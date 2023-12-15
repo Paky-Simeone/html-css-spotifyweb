@@ -3,3 +3,243 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+    /********************** HEADER */
+
+header{
+    background-color: #080B12;
+    height: 90px;
+    width: calc(100% - 230px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+    position: fixed;
+    margin-left: 230px;
+}
+
+header > button{
+    border: 1px solid white;
+    border-radius: 20px 20px;
+    color: white;
+    background-color: #080B12;
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+
+header > button:hover{
+    cursor: pointer;
+}
+
+    /********************** COLONNA NERA */
+
+.black-column{
+    float: left;
+    width: 230px;
+    height: calc(100% - 90px);
+    background-color: black;
+    color: #717171;
+    position: fixed;
+}
+
+    /****** LOGO COLONNA NERA ******/
+
+.black-column > div:nth-of-type(1){
+    height: 90px;
+}
+
+.black-column > div:nth-of-type(1) > img{
+  padding: 15px;
+}
+
+.black-column > div:nth-of-type(1) > img:hover{
+    cursor: pointer;
+  }
+
+  /****** MENU COLONNA NERA ******/
+
+.menu{
+    padding: 10px;
+}
+
+.menu > p{
+    padding: 5px;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.menu > p:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.menu > p > img{
+    height: 2rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    padding: 3px;
+}
+
+.menu > p > span{
+    vertical-align: middle;
+}
+
+    /****** PLAYLIST COLONNA NERA ******/
+
+.playlist{
+
+}
+
+.playlist > h2{
+    color: white;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.playlist > p{
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.playlist > p:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.fa-solid.fa-square-plus{
+    font-size: 3rem;
+    line-height: 3rem;
+    vertical-align: middle;
+}
+
+.playlist > ul{
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 200px;
+}
+
+.playlist > ul > li{
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+
+.playlist > ul > li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+    /****** INSTALLA  E ACCOUNT COLONNA NERA ******/
+
+.installa{
+
+}
+
+.installa > p{
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.installa > p:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.installa > p > img{
+    height: 2rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    border-radius: 50%;
+    border-color: #717171;
+}
+
+.account > p{
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.account > p:hover{
+    cursor: pointer;
+}
+
+.account > p > img{
+    height: 2rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #717171;
+    color: white;
+}
+
+ /********************** FOOTER */
+
+ footer{
+    width: 100%;
+    height: 90px;
+    background-color: #282828;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+ }
+
+ /***** PARTE SINISTRA FOOTER */
+
+.canzone{
+    width: 230px;
+    display: flex;
+    align-items: center;
+}
+
+ .img-canzone{
+
+ }
+
+ .img-canzone > img{
+    width: 100px;
+    margin: auto;
+    padding: 15px 20px;
+ }
+
+ .artista-canzone{
+    display: block;
+ }
+
+ .artista-canzone > p:nth-of-type(1){
+    font-weight: bold;
+    color: white;
+ }
+
+ .artista-canzone > p:nth-of-type(2){
+    color: #717171;
+    margin-top: 7px;
+ }
+
+ .heart-canzone{
+    margin-left: 10px;
+    color: #717171;
+ }
+
+ .heart-canzone > .fa-regular.fa-heart{
+    margin-right: 5px;
+ }
+
+ .heart-canzone > .fa-regular.fa-heart:hover{
+  color: white;
+  cursor: pointer;
+  }
+
+.heart-canzone > .fa-regular.fa-folder:hover{
+    color: white;
+    cursor: pointer;
+}
+
+    /***** PARTE CENTRALE FOOTER */
+
