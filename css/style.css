@@ -121,7 +121,7 @@ header > button:hover{
 .playlist > ul{
     list-style: none;
     padding-left: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 115px;
 }
 
 .playlist > ul > li{
@@ -189,7 +189,101 @@ header > button:hover{
     color: white;
     overflow: auto;
     padding-top: 90px;
-    padding-bottom: 90px;
+}
+
+.central > nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+    color: #717171;
+    font-size: small;
+}
+
+    /***** PRIMA GRIGLIA CENTRALE */
+
+.first-grill{
+    display: flex;
+    gap: 15px;
+    margin: 0px 30px;
+}
+
+.title-first-grill{
+    margin: 15px 30px;
+}
+
+.first-grill > div{
+    text-align: center;
+}
+
+.first-grill > div > img{
+    width: 100%;
+}
+
+.first-grill > div > h3{
+    margin: 5px 0px;
+    font-size: small;
+}
+
+.first-grill > div > p{
+    margin: 5px 0px;
+    color: #717171;
+    font-size: small;
+}
+
+    /***** SECONDA GRIGLIA CENTRALE */
+
+.second-grill{
+    display: flex;
+    gap: 15px;
+    margin: 20px 30px;
+}
+
+.title-second-grill{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.p-second-grill{
+    font-size: small;
+    color: #717171;
+    margin: 10px 30px;
+}
+
+.second-grill > div{
+    text-align: center;
+}
+
+.second-grill > div > img{
+    width: 210px;
+}
+
+.second-grill > div > h3{
+    margin: 5px 0px;
+    font-size: small;
+}
+
+    /***** TERZA GRIGLIA CENTRALE */
+
+.third-grill{
+    display: flex;
+    gap: 15px;
+    margin: 20px 30px;
+}
+
+.third-grill > div > img{
+    width: 210px;
+    border-radius: 50%;
+}
+
+.third-grill > div{
+    text-align: center;
+}
+
+.third-grill > div > h3{
+    margin: 5px 0px;
+    font-size: small;
 }
 
     /********************** FOOTER */
