@@ -60,6 +60,10 @@ header > button:hover{
     cursor: pointer;
   }
 
+  .logo-small{
+    display: none;
+  }
+
   /****** MENU COLONNA NERA ******/
 
 .menu{
@@ -193,6 +197,7 @@ header > button:hover{
 
 .central > nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding-top: 15px;
@@ -235,6 +240,7 @@ header > button:hover{
 
 .second-grill{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     margin: 20px 30px;
 }
@@ -256,7 +262,7 @@ header > button:hover{
 }
 
 .second-grill > div > img{
-    width: 210px;
+    width: 100%;
 }
 
 .second-grill > div > h3{
@@ -268,12 +274,13 @@ header > button:hover{
 
 .third-grill{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     margin: 20px 30px;
 }
 
 .third-grill > div > img{
-    width: 210px;
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -473,4 +480,125 @@ header > button:hover{
     width: 85%;
     background-color: #C1C1C1;
     border-radius: 4px;
+}
+
+/***************************************
+             MEDIA QUERY
+****************************************/
+
+@media screen and (max-width: 878px){
+
+    nav{
+        flex-wrap: wrap
+    }
+
+    .first-grill {
+        flex-wrap: wrap;
+    }
+
+    .first-grill div{
+        width: calc(100% / 4 - 15px);
+    }
+
+    .second-grill div{
+        width: calc(100% / 4 - 15px);
+    }
+
+    .third-grill div{
+        width: calc(100% / 4 - 15px);
+    }
+
+}
+
+@media screen and (max-width: 639px){
+    nav{
+        flex-wrap: wrap
+    }
+
+    .first-grill {
+        flex-wrap: wrap;
+    }
+
+    .first-grill div{
+        width: calc(50% - 15px);
+    }
+
+    .second-grill div{
+        width: calc(50% - 15px);
+    }
+
+    .third-grill div{
+        width: calc(50% - 15px);
+    }
+}
+
+@media screen and (max-width: 552px){
+    nav{
+        flex-wrap: wrap
+    }
+
+    .first-grill {
+        flex-wrap: wrap;
+    }
+
+    .first-grill div{
+        width: calc(50% - 15px);
+    }
+
+    .second-grill div{
+        width: calc(50% - 15px);
+    }
+
+    .third-grill div{
+        width: calc(50% - 15px);
+    }
+
+    header{
+        width: calc(100% - 70px);
+        margin-left: 70px;
+    }
+
+    .central{
+        width: calc(100% - 70px);
+    }
+    
+    .black-column{
+        width: 70px;
+    }
+
+    .black-column > div:nth-of-type(1) > img:nth-of-type(1){
+        display: none;
+    }
+
+    .black-column > div:nth-of-type(1) > img:nth-of-type(2){
+        display: block;
+    }
+
+    .menu > p > span{
+        display: none;
+    }
+
+    .menu{
+        margin-bottom: 440px;
+    }
+
+    .playlist > h2 {
+        display: none;
+    }
+
+    .playlist > p {
+        display: none;
+    }
+
+    .playlist > ul{
+        display: none;
+    }
+
+    .installa > p > span{
+        display: none;
+    }
+
+    .account > p > span{
+        display: none;
+    }
 }
